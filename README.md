@@ -1,14 +1,14 @@
 # buzzPost - in-browser notifications in ServiceNow
 
-buzzPost is a real-time notification platform, which provides direct on-screen notifications for ServiceNow users.
+buzzPost is a real-time notification platform, which provides direct on-screen notifications for ServiceNow users. It is a scoped application, which runs in a browser in a background and listens for incoming messages.
 
 ![img](/img/bzp2_sandbox.png)
 
-It is a scoped application, which runs in a browser in a background and listens for incoming messages.
-
-The application uses websockets to broadcasts messages to other web browsers. This cannot be done just in ServiceNow, we need to use a third party message broker and the best option is AWS IoT service.
+The application requires some configuration and a message broker (broadcasting services) setup.
 
 ## 1. Setup message broker - AWS IoT
+
+The app uses websockets to broadcasts messages to other web browsers. This cannot be done just in ServiceNow, we need to use a third party message broker and the best option is AWS IoT service.
 
 AWS IoT provides industrial grade security/performance, requires zero configuration and it's extremely cheap for messaging purposes.
 
