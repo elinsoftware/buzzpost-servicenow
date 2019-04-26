@@ -44,3 +44,11 @@ The final step is to update the app configuration, navigate to *buzzPost 2.0 / A
 - Message broker region: your AWS region
 - Communication key: IoT user Access key ID
 - Communication secret: IoT user Secret access key
+
+### 2.4 Reload the browser
+
+Reload your web browser and open any list or form, global script should be injected and you should be connected to the message broker.
+
+Check you browser console for the following messages:
+
+![img](/img/console.png)
