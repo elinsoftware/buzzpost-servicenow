@@ -30,6 +30,8 @@ For buzzPost configuration you would need:
 
 Download and install `buzzPost2.0 - application.xml` update set.
 
+Download and **XML import** `sys_properties.xml`, that is a list of secure properties for AWS IoT connection.
+
 ### 2.2 Activate broadcasting feature in a global scope
 
 Next step is to activate the app broadcasting feature. Scoped application does not allow running scripts in a global background, so you need to add a global UI script manually.
@@ -40,6 +42,7 @@ Download and install `broadcasting script.xml` update set.
 
 The final step is to update the app configuration, navigate to *buzzPost 2.0 / Admin* and set the following:
 
+- Notification listener: **disabled**
 - Remote message broker URL: your IoT endpoint
 - Message broker region: your AWS region
 - Communication key: IoT user Access key ID
@@ -52,3 +55,15 @@ Reload your web browser and open any list or form, global script should be injec
 Check you browser console for the following messages:
 
 ![img](/img/console.png)
+
+The application comes with a very detailed manual how to create your own templates, run tests, create triggers etc.
+
+![img](/img/help.png)
+
+There are two business rules on an Incident table, which come with the app:
+
+![img](/img/br.png)
+
+They are inactive by default. Activate them and assigned users will be notified through the messaging service when an incident assigned.
+
+>Broadcasting service based on ServiceNow event processing, so there may (or may not) be a few seconds delay between the actual event and notification displayed on in a browser.

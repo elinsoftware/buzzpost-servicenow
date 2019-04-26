@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <unload unload_date="2018-02-05 18:23:42">
 <sys_ui_script action="INSERT_OR_UPDATE">
-<active>false</active>
+<active>true</active>
 <description>Activation script to extend buzzPost2.0 to a global scope</description>
 <global>true</global>
 <name>bzp2.init.js</name>

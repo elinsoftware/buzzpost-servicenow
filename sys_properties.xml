@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-04-26 20:05:22">
+<sys_properties action="INSERT_OR_UPDATE">
+<choices/>
+<description>Communication secret for a message broker</description>
+<ignore_cache>false</ignore_cache>
+<is_private>true</is_private>
+<name>x_elsr_bp2.message.broker.secret</name>
+<read_roles>x_elsr_bp2.admin</read_roles>
+<suffix>message.broker.secret</suffix>
+<sys_class_name>sys_properties</sys_class_name>
+<sys_created_by>andrew.pishchulin</sys_created_by>
+<sys_created_on>2017-12-22 00:12:41</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_id>e60c2cf3db078740cc38f7fdbf9619d0</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_name>x_elsr_bp2.message.broker.secret</sys_name>
+<sys_package display_value="buzzPost2.0" source="x_elsr_bp2">e74ba0bfdb438740cc38f7fdbf961923</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="buzzPost2.0">e74ba0bfdb438740cc38f7fdbf961923</sys_scope>
+<sys_update_name>sys_properties_e60c2cf3db078740cc38f7fdbf9619d0</sys_update_name>
+<sys_updated_by>andrew.pishchulin</sys_updated_by>
+<sys_updated_on>2019-04-26 19:59:31</sys_updated_on>
+<type>password2</type>
+<value>{{gpaes}}PMjfkVY1gqXyzIetITkeuQ==</value>
+<write_roles>x_elsr_bp2.admin</write_roles>
+</sys_properties>
+<sys_properties action="INSERT_OR_UPDATE">
+<choices/>
+<description>Communication key for a message broker</description>
+<ignore_cache>false</ignore_cache>
+<is_private>true</is_private>
+<name>x_elsr_bp2.message.broker.key</name>
+<read_roles>x_elsr_bp2.admin</read_roles>
+<suffix>message.broker.key</suffix>
+<sys_class_name>sys_properties</sys_class_name>
+<sys_created_by>andrew.pishchulin</sys_created_by>
+<sys_created_on>2017-12-22 00:11:39</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_id>b9db28f3db078740cc38f7fdbf9619e7</sys_id>
+<sys_mod_count>9</sys_mod_count>
+<sys_name>x_elsr_bp2.message.broker.key</sys_name>
+<sys_package display_value="buzzPost2.0" source="x_elsr_bp2">e74ba0bfdb438740cc38f7fdbf961923</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="buzzPost2.0">e74ba0bfdb438740cc38f7fdbf961923</sys_scope>
+<sys_update_name>sys_properties_b9db28f3db078740cc38f7fdbf9619e7</sys_update_name>
+<sys_updated_by>andrew.pishchulin</sys_updated_by>
+<sys_updated_on>2019-04-26 19:59:31</sys_updated_on>
+<type>password2</type>
+<value>{{gpaes}}PMjfkVY1gqXyzIetITkeuQ==</value>
+<write_roles>x_elsr_bp2.admin</write_roles>
+</sys_properties>
+<sys_properties action="INSERT_OR_UPDATE">
+<choices/>
+<description>Message broker region</description>
+<ignore_cache>false</ignore_cache>
+<is_private>true</is_private>
+<name>x_elsr_bp2.message.broker.region</name>
+<read_roles>x_elsr_bp2.admin</read_roles>
+<suffix>message.broker.region</suffix>
+<sys_class_name>sys_properties</sys_class_name>
+<sys_created_by>andrew.pishchulin</sys_created_by>
+<sys_created_on>2017-12-22 01:05:23</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_id>fa38b03fdb078740cc38f7fdbf961985</sys_id>
+<sys_mod_count>12</sys_mod_count>
+<sys_name>x_elsr_bp2.message.broker.region</sys_name>
+<sys_package display_value="buzzPost2.0" source="x_elsr_bp2">e74ba0bfdb438740cc38f7fdbf961923</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="buzzPost2.0">e74ba0bfdb438740cc38f7fdbf961923</sys_scope>
+<sys_update_name>sys_properties_fa38b03fdb078740cc38f7fdbf961985</sys_update_name>
+<sys_updated_by>andrew.pishchulin</sys_updated_by>
+<sys_updated_on>2019-04-26 19:59:30</sys_updated_on>
+<type>string</type>
+<value>xxx</value>
+<write_roles>x_elsr_bp2.admin</write_roles>
+</sys_properties>
+<sys_properties action="INSERT_OR_UPDATE">
+<choices/>
+<description>Remote message broker URL</description>
+<ignore_cache>false</ignore_cache>
+<is_private>true</is_private>
+<name>x_elsr_bp2.message.broker</name>
+<read_roles>x_elsr_bp2.admin</read_roles>
+<suffix>message.broker</suffix>
+<sys_class_name>sys_properties</sys_class_name>
+<sys_created_by>andrew.pishchulin</sys_created_by>
+<sys_created_on>2017-12-22 00:10:39</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_id>be9be0f3db078740cc38f7fdbf9619cb</sys_id>
+<sys_mod_count>8</sys_mod_count>
+<sys_name>x_elsr_bp2.message.broker</sys_name>
+<sys_package display_value="buzzPost2.0" source="x_elsr_bp2">e74ba0bfdb438740cc38f7fdbf961923</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="buzzPost2.0">e74ba0bfdb438740cc38f7fdbf961923</sys_scope>
+<sys_update_name>sys_properties_be9be0f3db078740cc38f7fdbf9619cb</sys_update_name>
+<sys_updated_by>andrew.pishchulin</sys_updated_by>
+<sys_updated_on>2019-04-26 19:59:29</sys_updated_on>
+<type>string</type>
+<value>xxx</value>
+<write_roles>x_elsr_bp2.admin</write_roles>
+</sys_properties>
+</unload>
