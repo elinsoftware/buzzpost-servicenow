@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-05 18:23:42">
+<sys_ui_script action="INSERT_OR_UPDATE">
+<active>false</active>
+<description>Activation script to extend buzzPost2.0 to a global scope</description>
+<global>true</global>
+<name>bzp2.init.js</name>
+<script><![CDATA[function bzp2Init() {
+	var top = window.top;
+	if (typeof top.bzp2Flag != 'undefined') {
+		return;
+	}
+	var ga = new GlideAjax('x_elsr_bp2.RetrieveKeys');
+	ga.addParam('sysparm_name','retrieveBuzzKeys');
+	ga.addParam('sysparm_g_vendorStamp','63AC8FED8F53CBUZZ');
+	ga.getXML(InjectDependencies);
+}
+
+function InjectDependencies(response){
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	window.top.bzp2Keys = JSON.parse(answer);
+	injectJS();
+}
+
+function injectJS(){
+	var scriptMessageBroker = document.createElement('script');
+	scriptMessageBroker.src = "x_elsr_bp2.bzp2.connect.js.jsdbx";
+	top.document.getElementsByTagName('head')[0].appendChild(scriptMessageBroker);
+	
+	var toastJS = document.createElement('script');
+	toastJS.src = "x_elsr_bp2.bzp2.toast.js.jsdbx";
+	top.document.getElementsByTagName('head')[0].appendChild(toastJS);
+
+	var toastCSS = document.createElement('link');
+	toastCSS.href = "87b99110db1bc740cc38f7fdbf9619ca.cssdbx";
+	toastCSS.rel = "stylesheet";
+	toastCSS.type = "text/css";
+	top.document.getElementsByTagName('head')[0].appendChild(toastCSS);
+
+	
+	var iconsCSS = document.createElement('link');
+	iconsCSS.href = "b0f2c25cdb5bc740cc38f7fdbf9619d3.cssdbx";
+	iconsCSS.rel = "stylesheet";
+	iconsCSS.type = "text/css";
+	top.document.getElementsByTagName('head')[0].appendChild(iconsCSS);
+
+	console.log('bzp2: dependencies injected into global scope');
+	var checkGlobalFlag = window.top;
+	checkGlobalFlag.bzp2Flag = true;	
+}
+
+bzp2Init();]]></script>
+<script_name/>
+<sys_class_name>sys_ui_script</sys_class_name>
+<sys_created_by>andrew.pishchulin</sys_created_by>
+<sys_created_on>2017-12-22 00:56:30</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_id>144570bbdb078740cc38f7fdbf9619af</sys_id>
+<sys_mod_count>22</sys_mod_count>
+<sys_name>bzp2.init.js</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_ui_script_144570bbdb078740cc38f7fdbf9619af</sys_update_name>
+<sys_updated_by>andrew.pishchulin</sys_updated_by>
+<sys_updated_on>2018-02-04 21:23:33</sys_updated_on>
+<use_scoped_format>false</use_scoped_format>
+</sys_ui_script>
+</unload>
