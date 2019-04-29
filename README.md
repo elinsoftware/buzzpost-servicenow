@@ -67,3 +67,7 @@ There are two business rules on an Incident table, which come with the app:
 They are inactive by default. Activate them and assigned users will be notified through the messaging service when an incident assigned.
 
 >Broadcasting service based on ServiceNow event processing, so there may (or may not) be a few seconds delay between the actual event and notification displayed on in a browser.
+
+## 3. How to disable broadcasting service
+
+To disconnect/disable broadcasting service - set *bzp2.init.js* UI script to inactive.
