@@ -36,7 +36,7 @@ Download and **XML import** `sys_properties.xml`, that is a list of secure prope
 
 Next step is to activate the app broadcasting feature. Scoped application does not allow running scripts in a global background, so you need to add a global UI script manually.
 
-Download and install `broadcasting script.xml` update set.
+Download and **XML import** `broadcasting script.xml` update set.
 
 ### 2.3 Configure the application
 
